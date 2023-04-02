@@ -1,0 +1,31 @@
+GET http://localhost:3001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJKb24iLCJlbWFpbCI6ImpvbkBnbWFpbC5jb20iLCJpYXQiOjE2ODAyNTE0MjAsImV4cCI6MTY4MDI1MTcyMH0.lR2vxS0kbftQQJ0WOw8sdF8t8-ZHxBfFNLb3fTPZvQM
+
+
+
+###
+POST http://localhost:3001/signin
+Content-Type: application/json
+
+{
+    "email": "jon@gmail.com",
+    "password": "admin123"
+}
+
+###
+POST http://localhost:3001/signup
+Content-Type: application/json
+
+{
+    "name": "Jon",
+    "email": "jon@gmail.com",
+    "password": "admin123",
+    "confPassword": "admin123"
+}
+
+###
+GET http://localhost:3001/token
+
+
+###
+DELETE http://localhost:3001/logout
